@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from guestbook.views import home
+from guestbook.views import home, book_create
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
+    path('book/add/', book_create, name='book_create'),
 ]
