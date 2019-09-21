@@ -1,0 +1,1 @@
+# python_group_3_exam_6_bektursun_samatbek_uulu
