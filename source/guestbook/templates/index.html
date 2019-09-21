@@ -15,8 +15,8 @@
           <div class="card-body">
           <h5 class="card-title">{{ notepad.name }} ({{ notepad.email }})</h5><hr/>
           <p class="card-text">{{ notepad.text }}</p><hr/>
-          <button type="button" class="btn btn-primary">Update</button>
-          <button type="button" class="btn btn-danger">Delete</button>
+          <a href="{% url 'book_update' notepad.pk %}"><button type="button" class="btn btn-primary">Update</button></a>
+          <a href="{% url 'book_delete' notepad.pk %}"><button type="button" class="btn btn-danger">Delete</button></a>
           </div>
           </div>
           </div>
